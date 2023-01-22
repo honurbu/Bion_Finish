@@ -1,0 +1,220 @@
+﻿@using Blogss.Models.Context
+@model List<Blogss.Models.Product>
+
+
+@{
+    ViewData["Title"] = "Anasayfa";
+}
+
+
+<div class="owl-carousel owl-theme slider">
+    <div class="item">
+        <img src="~/images2/slide.png" data-resim="~images2/mobil.png" alt="slider" />
+    </div>
+</div>
+
+<!-- CONTENT -->
+<div class="content">
+    <div class="container">
+        <div class="services">
+            <div class="service-flex">
+                <a class="electric" title="electric">Aydınlatma<img src="~/images2/aydinlatma.svg" alt="YKA Elektrik"></a>
+                <a class="electric" title="electric">Enerji Kablosu<img src="~/images2/enerji.svg" alt="YKA Elektrik"></a>
+                <a class="electric" title="electric">Anahtar Priz<img src="~/images2/anahtar.svg" alt="YKA Elektrik"></a>
+                <a class="electric" title="electric">Şalter<img src="~/images2/salter.svg" alt="YKA Elektrik"></a>
+                <a class="electric" title="electric">Sensör<img src="~/images2/sensor.svg" alt="YKA Elektrik"></a>
+                <a class="electric" title="electric">Topraklama<img src="~/images2/topraklanma.svg" alt="YKA Elektrik"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="solution-partners">
+        <div class="container">
+            <div class="solution-text">
+                <p>Çözüm Ortakları</p>
+            </div>
+            <div class="solution-flex">
+                <a class="col l2 m4 s12" title="solution"><img src="https://www.ykaelektrik.com.tr/images/schneider.png" alt="YKA Elektrik"></a>
+                <a class="col l2 m4 s12" title="solution"><img src="https://www.ykaelektrik.com.tr/images/hes-kablo.png" alt="YKA Elektrik"></a>
+                <a class="col l2 m4 s12" title="solution"><img src="https://www.ykaelektrik.com.tr/images/oznur-kablo.png" alt="YKA Elektrik"></a>
+                <a class="col l2 m4 s12" title="solution"><img src="https://www.ykaelektrik.com.tr/images/schneider.png" alt="YKA Elektrik"></a>
+                <a class="col l2 m4 s12" title="solution"><img src="https://www.ykaelektrik.com.tr/images/hes-kablo.png" alt="YKA Elektrik"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="blog">
+        <div class="container">
+            <div class="blogs">
+                <div class="blog-baslik">
+                    <p>Blog</p>
+                </div>
+                <div class="blog-text">
+                    <p>Lorem ipsum dolor sit amet, vel accumsan liberavisse ex, ea nec elaboraret interpretaris sed.</p>
+                </div>
+            </div>
+            <div class="blog-card">
+                <div class="row">
+
+
+
+                    @await Component.InvokeAsync("ListBlogs")
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="blog main-page-blog mb-70">
+        <div class="row mb-0">
+            <div class="container">
+                <div class="medya-title">
+                    <p>Medya Galeri</p>
+                </div>
+
+                <div class="col l4 m6 s12">
+                    <h4 class="title">MK Busbar</h4>
+                    <div class="blog-box">
+                        <div class="card-content">
+                            <a class="blog-img" title="MK Busbar" href="">
+                                <iframe width="400" height="270" src="https://www.youtube.com/embed/ktS4hAEt0c8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col l4 m6 s12">
+                    <h4 class="title">Askılama</h4>
+                    <div class="blog-box">
+                        <div class="card-content">
+                            <a class="blog-img" title="Askılama" href="">
+                                <iframe width="400" height="270" src="https://www.youtube.com/embed/wfwRNT971vg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col l4 m6 s12">
+                    <h4 class="title">İç Tesisat Çözümleri</h4>
+                    <div class="blog-box">
+                        <div class="card-content">
+                            <a class="blog-img" title="İç Tesisat Çözümleri" href="">
+                                <iframe width="400" height="270" src="https://www.youtube.com/embed/FaANE0WmjOA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="anasayfa-p">
+        <div class="parallax-container">
+            <div class="parallax">
+                <img src="~/images2/paralax.png" alt="YKA Elektrik" />
+            </div>
+            <div class="bg-filter">
+                <div class="bg-baslik">
+                    <h3>Hakkımızda</h3>
+                </div>
+                <div class="bg-text">
+                    <p>YKA Elektrik, enerji ve elektrik malzemeleri sektöründe faaliyet gösteren global markaların ürünlerini müşterileriyle buluşturuyor. Biz; bireysel ve ticari olarak elektrik-endüstri ürünleri ihtiyaçlarına eksiksiz çözümler sunma konusunda deneyimliyiz.</p>
+                </div>
+                <div class="bg-button">
+                    <a href="@Url.Action("Index","iletisim")" class="bg-btn" title="İletişime Geç">İletişime Geç<i class="fa-solid fa-right-long"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="products">
+        <div class="container">
+            <div class="products-text">
+                <span class="baslik">Ürünler</span>
+                <span class="alt-baslik">Lorem ipsum dolor sit amet, vel accumsan liberavisse ex, ea nec elaboraret interpretaris sed.</span>
+            </div>
+
+
+
+            <div class="row">
+
+                @foreach (var item in Model)
+                {
+
+                    <div class="col l3 m3 s12">
+                        <a class="products-img" title="YKA Elektrik" href="">
+                            <ul class="products-img-text">
+                                <li><img src="@item.ImageUrl" alt="YKA Elektrik"></li>
+                                <li class="baslik-alt">@item.ProductTitle</li>
+                            </ul>
+                        </a>
+                    </div>
+
+                }
+
+            </div>
+
+
+
+
+
+
+            <div class="products-button">
+                <a class="products-btn" title="Tüm Ürünler">Tüm Ürünler</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container anasayfa-bilgi content-text">
+        <h2>Elektrik Ürünleri</h2>
+        <div class="row">
+            <div class="col l12 m12 s12">
+                <p>Elektriğin, günlük hayatımızda kullandığımız makinelere, aydınlatma maddelerine, aletlere, cihazlara ve kullandığımız diğer ürünlere güç sağlamak için son derece güçlü bir enerji kaynağı olduğunu hepimiz biliyoruz. Bununla birlikte elektrik, ciddi yaralanmalara ve ölümlere neden olan büyük bir sağlık tehlikesi de olabilir. Bu nedenle elektrik ürünlerinin seçimi büyük önem arz eder. Elektriği koklayamaz, duyamaz veya göremezsiniz. Bu tehlikeli enerjiyi yönetmek için doğru sistemlere sahip olmanız gerekir. Elektrik ürünlerinden bazıları aşağıdaki kategorilere dahildir.</p>
+                <p></p>
+            </div>
+        </div>
+        <a id="devami" style="display: none;">Devamını Gör...</a>
+        <div class="gizli-yazi" style="display: block;">
+            <div class="row">
+                <div class="col l12 m12 s12">
+                    <p><a href="https://ykaelektrik.com.tr/urunler/aydinlatma" target="_blank" title="aydınlatma">Aydınlatma</a>, tasarımın diğer tüm unsurları kadar önemlidir. İyi aydınlatma bir alanı değiştirir ve dönüştürür. Spot elektrik ürünleri bir odayı rahat, aynı zamanda dramatik ve atmosferik hissettirmek için ışık ve gölge uyumu yaratır. Spot ışıklar hem ev hem de iş yerleri için çok çeşitli uygulamalarda yer bulur. Endüstriyel, kentsel veya kırsal ortamlarda olsun, her türlü mülk için spot elektrik ürünleri mükemmel bir kullanım deneyimi oluşturur.</p>
+                </div>
+
+                <div class="col l4 m4 s12">
+                    <h2>Spot Elektrik Ürünleri</h2>
+
+                    <p>İnsanoğlu, karanlığın bir sorun kaynağı olabileceğini uzun zamandır anlamıştır. İnsan gözleri, düşük ışık koşullarıyla başa çıkmak için yetersiz bir donanıma sahiptir. Bu da karanlıkta dolaşanların kolayca yaralanmasına neden olur. Günümüzde LED ve spot ışıkların icadı pek çok avantajı da beraberinde getirdi. İkisi arasındaki fark öncelikle kapsam meselesidir. Spot ışıklar, genellikle 45 dereceyle sınırlı, nispeten dar bir alanı kaplayan bir ışın üretir. Bu tür aydınlatmayı kullanmanın faydaları kontrol ve konsantrasyondur. Bir spot ışıkla belirli bir noktayı vurgulamak çok daha kolaydır ve genellikle kontrol edilmesi de basittir.</p>
+
+                    <p>Mimari detaylar, peyzaj detayları, dış mekan duvar süsleri ya da teşhir nesneleri gibi belirli özellikleri vurgulamak için mükemmeldirler. Gömme <a href="https://ykaelektrik.com.tr/urunler/aydinlatma/ray-spot" target="_blank" title="spot">spot</a> ışıklar, yalnızca işlevsel bir amaca hizmet etmekle kalmaz, aynı zamanda bir düğme dokunuşuyla küçük bir odanın daha büyük görünmesini sağlayarak görsel bir etki yaratır. Gömme spot lamba ve elektrik ürünleri, şık ve minimalist bir tasarıma sahiptir, modern bir iç mekana çekici bir ışıltı verir. Ofisler, perakende satış yerleri, restoranlar ve çok çeşitli sektörler için de doğru bir seçimdir.</p>
+                </div>
+
+                <div class="col l4 m4 s12">
+                    <h3>Aydınlatma Ürünleri</h3>
+
+                    <p>Aydınlatma; binaların, dış mekanların ve iç mekanların genellikle hafife alınan bir yönüdür. Belirli özellikleri geliştirmeye, küçültmeye, vurgulamaya ve hatta gizlemeye yardım edebilir. Daha da önemlisi aydınlatma, bir binanın veya alanın enerji tüketiminde ve karbon ayak izinde çok önemli bir rol oynayabilir. Aydınlatma ürünleri, özellikle ışık kaynağının güç verimliliği açısından son yıllarda hızla gelişmiştir. Özellikle yeni yüksek yoğunluklu LED'ler yüksek ışık çıkışı sağlar ve çok az güç tüketir.</p>
+
+                    <p>Güneş enerjili bahçe lambaları, elektrikle çalışan bahçe aydınlatmasına alternatif olarak sıklıkla tercih ediliyor. Güneş enerjili aydınlatma ürünleri ise şarj edilebilir bir pil içerir. Böylece güç gün boyunca depolanabilir ve gece kullanılabilir.</p>
+                </div>
+
+                <div class="col l4 m4 s12">
+                    <h3>Elektrik Tesisatı</h3>
+
+                    <p>Elektrik kablo tesisatı kapsamı, tüm aksesuarların, kabloların, <a href="https://ykaelektrik.com.tr/urunler/anahtar,-priz" target="_blank" title="anahtar">anahtarların</a>, kablo kanallarının, düz prizlerin ve daha fazlasının kurulumunu, test edilmesini, tedarik edilmesini ve devreye alınmasını kapsamalıdır. Bu nedenle, özellikle bina projeleri için elektrik tesisatı ürünlerine daha fazla dikkat edilmesi gerekir. Ticari, konut veya endüstriyel kablolama için gerçek kurulum işini yapmadan önce birkaç faktör dikkate alınmalıdır. Elektrik uzmanları ayrıca duvar ve zemin inşaatı, kurulum gereksinimleri, tavan tipi, bina inşaatı vb. faktörleri de göz önünde bulundurmalıdır. Uygun olmayan şekilde yapılan elektrik kablolaması bir risk ve yangın tehlikesidir. Elektriksel belirsizliklerin izini sürmek elektrikçilerin en büyük sorumluluğudur. Ek olarak elektrik tesisat malzemeleri arasından kaliteli markaların ürünlerini kullanmak, güvenlik düzeyini artırır.</p>
+                </div>
+
+            </div>
+            <a id="gizle">Devamını Gizle...</a>
+        </div>
+    </div>
+</div>

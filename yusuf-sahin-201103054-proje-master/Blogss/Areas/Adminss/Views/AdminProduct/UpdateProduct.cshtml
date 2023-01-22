@@ -1,0 +1,49 @@
+﻿
+@using Blogss.Models.Context
+@model Blogss.Models.Product
+
+
+
+@{
+    ViewData["Title"] = "UpdateProduct";
+    Layout = "~/Areas/Adminss/Views/Shared/View.cshtml";
+}
+
+<h1>UpdateProduct</h1>
+
+@using (Html.BeginForm("UpdateProduct", "AdminProduct", FormMethod.Post))
+{
+   
+
+    @Html.Label("Ürün Açıklaması")
+    @Html.TextBoxFor(x => x.ProductDescription, new { @class = "form-control" })
+    <br />
+
+
+
+    @Html.Label("Ürün Başlığı")
+    @Html.TextBoxFor(x => x.ProductTitle, new { @class = "form-control" })
+    <br />
+
+
+    @Html.Label("Ürün Fotosu")
+    @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
+
+    <br />
+
+
+    @Html.Label("Kategorisi ")
+    @Html.TextBoxFor(x => x.Category.CategoryName, new { @class = "form-control" })
+
+    <br />
+
+
+
+    <br />
+
+    <br />
+    <br />
+
+    <button class="btn btn-success" id="btn1">Güncelle</button>
+
+}

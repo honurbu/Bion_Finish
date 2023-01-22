@@ -1,0 +1,21 @@
+﻿@model List<Blog>
+
+
+@foreach(var item in Model)
+
+{
+    <div class="col l4 m4 s12">
+        <div class="blog-box">
+            <div class="card-content">
+                <a class="blog-img" title="YKA Elektrik" href="">
+                    <img src="@item.BlogImage" alt="YKA Elektrik">
+                </a>
+                <div class="card-hover">
+                    <h4 class="title">@item.BlogTitle</h4>
+                    <p>@item.SpotDefinition</p>
+                    <a href="blog-detay.html" title="Blog Detay">Devamını Oku<i class="fa-solid fa-right-long"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+}

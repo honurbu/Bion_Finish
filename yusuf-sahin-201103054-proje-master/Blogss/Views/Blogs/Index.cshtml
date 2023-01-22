@@ -1,0 +1,55 @@
+﻿@using Blogss.Models.Context
+@model List<Blog>
+
+@{
+    ViewBag.Title = "Blog | YKA Elektrik";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="content detay">
+    <div class="parallax-container">
+        <div class="parallax banner">
+            <img src="~/images2/banner1.png" alt="YKA Elektrik" />
+        </div>
+        <div class="detay-filter">
+            <div class="detay-baslik">
+                <h1>Blog</h1>
+            </div>
+        </div>
+        <div class="banner-category">
+            <ul>
+                <li><a href="@Url.Action("Index","Default")" title="YKA Elektrik">Anasayfa<i class="fas fa-chevron-right" aria-hidden="true"></i></a></li>
+                <li><a href="@Url.Action("Blog","Default")" title="Bloglar">Bloglar<i class="fas fa-chevron-right" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="blog">
+        <div class="container">
+            <div class="blog-card">
+                <div class="row">
+                    @foreach (var item in Model)
+                    {
+                        <div class="col l4 m4 s12">
+                            <div class="blog-box">
+                                <div class="card-content">
+                                    <a class="blog-img" title="@item.BlogTitle" href="">
+                                        <img src="@item.BlogImage" alt="@item.BlogTitle">
+                                    </a>
+                                    <div class="card-hover">
+                                        <h4 class="title">@item.BlogTitle</h4>
+                                        <p>@item.SpotDefinition</p>
+                                        <a href="/Adminss/AdminBlog/GetBlogById/@item.Id" title="Blog Detay">Devamını Oku<i class="fa-solid fa-right-long"></i></a>
+                                        @*<a href="/Adminss/AdminBlog/GetBlogById" title="Blog Detay">Devamını Oku<i class="fa-solid fa-right-long"></i></a>*@
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

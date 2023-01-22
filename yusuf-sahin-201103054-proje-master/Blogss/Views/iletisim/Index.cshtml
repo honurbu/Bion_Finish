@@ -1,0 +1,66 @@
+﻿
+@{
+    ViewBag.Title = "İletişim | YKA Elektrik";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="content detay">
+      <div class="parallax-container">
+        <div class="parallax banner">
+            <img src="~/images2/banner1.png" alt="YKA Elektrik "/>
+        </div>
+        <div class="detay-filter">
+          <div class="detay-baslik">
+            <h1>İletişim</h1>
+          </div>
+        </div>
+        <div class="banner-category">
+          <ul>
+            <li><a href="/index.html" title="YKA Elektrik">Anasayfa<i class="fas fa-chevron-right" aria-hidden="true"></i></a></li>
+            <li><a href="/iletisim.html" title="İletişim">İletişim<i class="fas fa-chevron-right" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row iletisim-page">
+        <div class="container">
+          <div class="col l6 m6 s12 pl-20 iletisim">
+            <form action="" class="form" enctype="multipart/form-data" id="iletisimformu" method="post">
+            <h2 class="red-title">İletişim Formu</h2>
+            <div class="input-field col l12 m12 s12">
+              <input class="validate" id="isim_soyisim" name="isim_soyisim" type="text"> <label for="isim_soyisim">İsim Soyisim</label>
+            </div>
+            <div class="input-field col l12 m12 s12">
+              <input class="validate" id="email" name="email" type="email"> <label for="email">Email</label>
+            </div>
+            <div class="input-field col l12 m12 s12">
+              <input class="validate" id="tel" name="tel" type="tel"> <label for="tel">Telefon</label>
+            </div>
+            <div class="input-field col l12 m12 s12">
+              <input class="validate" id="mesaj" name="mesaj" type="text"> <label for="mesaj">Mesajınız...</label>
+            </div>
+            <div class="clearfix">&nbsp;</div>
+            <a class="primary-button right" id="iletisimFormuOnay" title="servis isteyin">Randevu Al </a></form>
+          </div>
+          <div class="col l6 m6 s12 right adress">
+            <ul class="m-0">
+              <li class="map-list">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12072.9433234429!2d31.1485969!3d40.8447458!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x74d9297d0f4ac145!2sD%C3%BCzce%20Meslek%20Y%C3%BCksek%20Okulu!5e0!3m2!1str!2str!4v1674347876681!5m2!1str!2str" width="100%" height="250px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </li>
+              <li>
+                <div class="row m-0">
+                  <div class="col s2 center"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
+                            <div class="col s10"><span>Adres: </span>Uzunmustafa Mah Merkez, 81010 Merkez/Düzce</div>
+                </div>
+              </li>
+              <li>
+                <div class="row m-0">
+                  <div class="col s2 center"><i class="far fa-envelope" aria-hidden="true"></i></div>
+                  <div class="col s10"><span>İletişim: </span> <span> <a target="_blank"> Telefon: +90 533 319 32 77</a> </span> <span> <a href="mailto:info@albahukuk.com">Mail: yusuf.sahin10@hotmail.com.tr </a> </span></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>

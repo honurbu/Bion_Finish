@@ -1,0 +1,161 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Adminss\Data\" />
+    <Folder Include="Areas\Adminss\Models\" />
+    <Folder Include="Areas\Adminss\Views\images\" />
+    <Folder Include="Content\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images2\adminlogo.jpg" />
+    <None Include="wwwroot\css2\default.css" />
+    <None Include="wwwroot\images2\.DS_Store" />
+    <None Include="wwwroot\images2\._.DS_Store" />
+    <None Include="wwwroot\images2\._11.png" />
+    <None Include="wwwroot\images2\._2.png" />
+    <None Include="wwwroot\images2\._3.png" />
+    <None Include="wwwroot\images2\._4.png" />
+    <None Include="wwwroot\images2\._5.png" />
+    <None Include="wwwroot\images2\._5410a7f170c93c07a15a3f5ffaecddc9.png" />
+    <None Include="wwwroot\images2\._6.png" />
+    <None Include="wwwroot\images2\._7.png" />
+    <None Include="wwwroot\images2\._8.png" />
+    <None Include="wwwroot\images2\._anahtar.svg" />
+    <None Include="wwwroot\images2\._banner1.png" />
+    <None Include="wwwroot\images2\._blog1.png" />
+    <None Include="wwwroot\images2\._blog2.png" />
+    <None Include="wwwroot\images2\._blog3.png" />
+    <None Include="wwwroot\images2\._blog4.png" />
+    <None Include="wwwroot\images2\._blog5.png" />
+    <None Include="wwwroot\images2\._blog6.png" />
+    <None Include="wwwroot\images2\._eb9ab2166a67c7d53505db7cdc3cdbb7.png" />
+    <None Include="wwwroot\images2\._enerji.svg" />
+    <None Include="wwwroot\images2\._favicon" />
+    <None Include="wwwroot\images2\._hes-kablo.png" />
+    <None Include="wwwroot\images2\._isdo.png" />
+    <None Include="wwwroot\images2\._left-arrow-1.png" />
+    <None Include="wwwroot\images2\._logo-footer.webp" />
+    <None Include="wwwroot\images2\._logo.webp" />
+    <None Include="wwwroot\images2\._mobil.png" />
+    <None Include="wwwroot\images2\._mobile-logo.png" />
+    <None Include="wwwroot\images2\._oznur-kablo.png" />
+    <None Include="wwwroot\images2\._paralax.png" />
+    <None Include="wwwroot\images2\._right-arrow-1.png" />
+    <None Include="wwwroot\images2\._salter.svg" />
+    <None Include="wwwroot\images2\._schneider.png" />
+    <None Include="wwwroot\images2\._sensor.svg" />
+    <None Include="wwwroot\images2\._slayt-mobile.png" />
+    <None Include="wwwroot\images2\._topraklanma.svg" />
+    <None Include="wwwroot\images2\11.png" />
+    <None Include="wwwroot\images2\2.png" />
+    <None Include="wwwroot\images2\3.png" />
+    <None Include="wwwroot\images2\4.png" />
+    <None Include="wwwroot\images2\5.png" />
+    <None Include="wwwroot\images2\5410a7f170c93c07a15a3f5ffaecddc9.png" />
+    <None Include="wwwroot\images2\6.png" />
+    <None Include="wwwroot\images2\7.png" />
+    <None Include="wwwroot\images2\8.png" />
+    <None Include="wwwroot\images2\anahtar.svg" />
+    <None Include="wwwroot\images2\aydinlatma.svg" />
+    <None Include="wwwroot\images2\banner1.png" />
+    <None Include="wwwroot\images2\blog1.png" />
+    <None Include="wwwroot\images2\blog2.png" />
+    <None Include="wwwroot\images2\blog3.png" />
+    <None Include="wwwroot\images2\blog4.png" />
+    <None Include="wwwroot\images2\blog5.png" />
+    <None Include="wwwroot\images2\blog6.png" />
+    <None Include="wwwroot\images2\eb9ab2166a67c7d53505db7cdc3cdbb7.png" />
+    <None Include="wwwroot\images2\enerji.svg" />
+    <None Include="wwwroot\images2\favicon\._android-icon-144x144.png" />
+    <None Include="wwwroot\images2\favicon\._android-icon-192x192.png" />
+    <None Include="wwwroot\images2\favicon\._android-icon-36x36.png" />
+    <None Include="wwwroot\images2\favicon\._android-icon-48x48.png" />
+    <None Include="wwwroot\images2\favicon\._android-icon-72x72.png" />
+    <None Include="wwwroot\images2\favicon\._android-icon-96x96.png" />
+    <None Include="wwwroot\images2\favicon\._apple-icon-114x114.png" />
+    <None Include="wwwroot\images2\favicon\._apple-icon-120x120.png" />
+    <None Include="wwwroot\images2\favicon\._apple-icon-144x144.png" />
+    <None Include="wwwroot\images2\favicon\._apple-icon-152x152.png" />
+    <None Include="wwwroot\images2\favicon\._apple-icon-180x180.png" />
+    <None Include="wwwroot\images2\favicon\._apple-icon-57x57.png" />
+    <None Include="wwwroot\images2\favicon\._apple-icon-60x60.png" />
+    <None Include="wwwroot\images2\favicon\._apple-icon-72x72.png" />
+    <None Include="wwwroot\images2\favicon\._apple-icon-76x76.png" />
+    <None Include="wwwroot\images2\favicon\._apple-icon-precomposed.png" />
+    <None Include="wwwroot\images2\favicon\._apple-icon.png" />
+    <None Include="wwwroot\images2\favicon\._browserconfig.xml" />
+    <None Include="wwwroot\images2\favicon\._favicon-16x16.png" />
+    <None Include="wwwroot\images2\favicon\._favicon-32x32.png" />
+    <None Include="wwwroot\images2\favicon\._favicon-96x96.png" />
+    <None Include="wwwroot\images2\favicon\._favicon.ico" />
+    <None Include="wwwroot\images2\favicon\._ms-icon-144x144.png" />
+    <None Include="wwwroot\images2\favicon\._ms-icon-150x150.png" />
+    <None Include="wwwroot\images2\favicon\._ms-icon-310x310.png" />
+    <None Include="wwwroot\images2\favicon\._ms-icon-70x70.png" />
+    <None Include="wwwroot\images2\favicon\android-icon-144x144.png" />
+    <None Include="wwwroot\images2\favicon\android-icon-192x192.png" />
+    <None Include="wwwroot\images2\favicon\android-icon-36x36.png" />
+    <None Include="wwwroot\images2\favicon\android-icon-48x48.png" />
+    <None Include="wwwroot\images2\favicon\android-icon-72x72.png" />
+    <None Include="wwwroot\images2\favicon\android-icon-96x96.png" />
+    <None Include="wwwroot\images2\favicon\apple-icon-114x114.png" />
+    <None Include="wwwroot\images2\favicon\apple-icon-120x120.png" />
+    <None Include="wwwroot\images2\favicon\apple-icon-144x144.png" />
+    <None Include="wwwroot\images2\favicon\apple-icon-152x152.png" />
+    <None Include="wwwroot\images2\favicon\apple-icon-180x180.png" />
+    <None Include="wwwroot\images2\favicon\apple-icon-57x57.png" />
+    <None Include="wwwroot\images2\favicon\apple-icon-60x60.png" />
+    <None Include="wwwroot\images2\favicon\apple-icon-72x72.png" />
+    <None Include="wwwroot\images2\favicon\apple-icon-76x76.png" />
+    <None Include="wwwroot\images2\favicon\apple-icon-precomposed.png" />
+    <None Include="wwwroot\images2\favicon\apple-icon.png" />
+    <None Include="wwwroot\images2\favicon\browserconfig.xml" />
+    <None Include="wwwroot\images2\favicon\favicon-16x16.png" />
+    <None Include="wwwroot\images2\favicon\favicon-32x32.png" />
+    <None Include="wwwroot\images2\favicon\favicon-96x96.png" />
+    <None Include="wwwroot\images2\favicon\favicon.ico" />
+    <None Include="wwwroot\images2\favicon\ms-icon-144x144.png" />
+    <None Include="wwwroot\images2\favicon\ms-icon-150x150.png" />
+    <None Include="wwwroot\images2\favicon\ms-icon-310x310.png" />
+    <None Include="wwwroot\images2\favicon\ms-icon-70x70.png" />
+    <None Include="wwwroot\images2\hes-kablo.png" />
+    <None Include="wwwroot\images2\isdo.png" />
+    <None Include="wwwroot\images2\left-arrow-1.png" />
+    <None Include="wwwroot\images2\logo-footer.webp" />
+    <None Include="wwwroot\images2\logo.webp" />
+    <None Include="wwwroot\images2\mobil.png" />
+    <None Include="wwwroot\images2\mobile-logo.png" />
+    <None Include="wwwroot\images2\oznur-kablo.png" />
+    <None Include="wwwroot\images2\paralax.png" />
+    <None Include="wwwroot\images2\right-arrow-1.png" />
+    <None Include="wwwroot\images2\salter.svg" />
+    <None Include="wwwroot\images2\schneider.png" />
+    <None Include="wwwroot\images2\sensor.svg" />
+    <None Include="wwwroot\images2\slayt-mobile.png" />
+    <None Include="wwwroot\images2\slide.png" />
+    <None Include="wwwroot\images2\topraklanma.svg" />
+    <None Include="wwwroot\js2\default.js" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,52 @@
+﻿@using Blogss.Models.Context
+@model Blogss.Models.Blog
+
+
+
+
+@{
+    ViewData["Title"] = "UpdateBlog";
+    Layout = "~/Areas/Adminss/Views/Shared/View.cshtml";
+}
+
+@using (Html.BeginForm("UpdateBlog", "AdminBlog", FormMethod.Post))
+{
+    @Html.Label("Blog Id")
+    @Html.TextBoxFor(x => x.Id, new { @class = "form-control, @readonly=true" })
+    <br />   
+
+
+    @Html.Label("Blog Başlığı")
+    @Html.TextBoxFor(x => x.BlogTitle, new { @class = "form-control" })
+    <br />
+
+
+    @Html.Label("Blog Spotu")
+    @Html.TextBoxFor(x => x.SpotDefinition, new { @class = "form-control" })
+
+    <br />
+
+
+    @Html.Label("Blog Yazısı")
+    @Html.TextBoxFor(x => x.BlogWrite, new { @class = "form-control" })
+
+    <br />
+    
+    <br />
+
+
+    @Html.Label("Blog Fotoğrafı")
+    @Html.TextBoxFor(x => x.BlogImage, new { @class = "form-control" })
+
+    <br />
+
+
+
+    <br />
+
+    <br />
+    <br />
+
+    <button class="btn btn-success" id="btn1">Güncelle</button>
+
+}

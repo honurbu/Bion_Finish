@@ -1,0 +1,42 @@
+﻿@using Blogss.Models.Context
+@model List<Organisation>
+
+@{
+    ViewBag.Title = "Kurumsal | YKA Elektrik";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="content detay">
+    <div class="parallax-container">
+        <div class="parallax banner">
+            <img src="/images2/banner1.png" alt="YKA Elektrik" />
+        </div>
+        <div class="detay-filter">
+            <div class="detay-baslik">
+                <h1>Biz Kimiz?</h1>
+            </div>
+        </div>
+        <div class="banner-category">
+            <ul>
+                <li><a href="/index.html" title="YKA Elektrik">Anasayfa<i class="fas fa-chevron-right" aria-hidden="true"></i></a></li>
+                <li><a href="/kurumsal.html" title="Kurumsal">Kurumsal<i class="fas fa-chevron-right" aria-hidden="true"></i></a></li>
+                <li><a href="/kurumsal.html" title="Biz Kimiz?">Biz Kimiz?<i class="fas fa-chevron-right" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="corporate">
+        <div class="container">
+            <div class="corporate-text">
+                <p>
+                    @foreach (var item in Model)
+                    {
+                        @item.Definition
+                    }
+                </p>
+                <img src="https://www.ykaelektrik.com.tr/uploads/sayfa-resimleri/kurumsal_30936.png" />
+                <img src="https://www.ykaelektrik.com.tr/uploads/sayfa-resimleri/kurumsal_72855.png" />
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,52 @@
+﻿
+@model Blogss.Models.Product
+
+
+@{
+    ViewData["Title"] = "AddProduct";
+    Layout = "~/Areas/Adminss/Views/Shared/View.cshtml";
+}
+
+<h1>AddProduct</h1>
+
+@using (Html.BeginForm("AddProduct", "AdminProduct", FormMethod.Post))
+{
+    @Html.Label("Ürün Id")
+    @Html.TextBoxFor(x => x.Id, new { @class = "form-control, @readonly=true" })
+    <br />
+
+
+
+
+
+    @Html.Label("Ürün Başlığı")
+    @Html.TextBoxFor(x => x.ProductTitle, new { @class = "form-control" })
+    <br /> 
+    
+    
+    @Html.Label("Ürün Açıklaması")
+    @Html.TextBoxFor(x => x.ProductDescription, new { @class = "form-control" })
+    <br />
+
+
+    @Html.Label("Ürün Fotosu")
+    @Html.TextBoxFor(x => x.ImageUrl, new { @class = "form-control" })
+
+    <br />
+
+
+    @Html.Label("Kategorisi ")
+    @Html.TextBoxFor(x => x.Category.CategoryName, new { @class = "form-control" })
+
+    <br />
+
+
+
+    <br />
+
+    <br />
+    <br />
+
+    <button class="btn btn-success" id="btn1">Ekle</button>
+
+}

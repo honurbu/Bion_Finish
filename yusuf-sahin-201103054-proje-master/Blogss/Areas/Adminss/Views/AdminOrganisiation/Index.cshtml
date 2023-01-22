@@ -1,0 +1,63 @@
+﻿@using Blogss.Models.Context
+@model List<Blogss.Models.Organisation>
+
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Adminss/Views/Shared/View.cshtml";
+}
+
+<h1>Index</h1>
+
+
+<html>
+<body>
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="ibox ">
+                    <div class="ibox-title">
+                        <h5>Ürün Tablosu</h5>
+                        <div class="ibox-tools">
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th> ID</th>
+                                    <th>Organizasyon Adı</th>
+                                    <th>Orhanizasyon Tanımı</th>
+                                    <th>Sil</th>
+                                    <th>Düzenle</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@item.Id</td>
+                                        <td>@item.OrganisationName</td>
+                                        <td>@item.Definition</td>
+                                        <td><a href="/Adminss/AdminOrganisiation/OrganisatiionDelete/@item.Id" class="btn btn-outline-danger">Sil</a></td>
+                                        <td><a href="/Adminss/AdminOrganisiation/UpdateOrganisation/@item.Id" class="btn btn-outline-success">Düzenle</a></td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="/Adminss/AdminOrganisiation/AddOrganisation" class="btn btn-primary">Yeni Organizasyon Ekle</a>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $("div.main-panel div.content-wrapper").css("overflow-x", "auto");
+    </script>
+</body>
+</html>

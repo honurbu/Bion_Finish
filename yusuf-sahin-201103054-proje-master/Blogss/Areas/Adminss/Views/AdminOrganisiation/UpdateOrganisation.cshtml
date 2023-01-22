@@ -1,0 +1,44 @@
+﻿@using Blogss.Models.Context
+@model Blogss.Models.Organisation
+
+
+@{
+    ViewData["Title"] = "UpdateOrganisation";
+    Layout = "~/Areas/Adminss/Views/Shared/View.cshtml";
+}
+
+<h1>UpdateOrganisation</h1>
+
+@using (Html.BeginForm("UpdateOrganisation", "AdminOrganisiation", FormMethod.Post))
+{
+    @Html.Label("Organizasyon Id")
+    @Html.TextBoxFor(x => x.Id, new { @class = "form-control, @readonly=true" })
+    <br />
+
+
+
+    @Html.Label("Organizasyon Adı ")
+    @Html.TextBoxFor(x => x.OrganisationName, new { @class = "form-control" })
+    <br />
+
+
+
+    @Html.Label("Organizasyon Tanıtımı Başlığı")
+    @Html.TextBoxFor(x => x.Definition, new { @class = "form-control" })
+    <br />
+
+
+
+
+    <br />
+
+
+
+    <br />
+
+    <br />
+    <br />
+
+    <button class="btn btn-success" id="btn1">Güncelle</button>
+
+}
